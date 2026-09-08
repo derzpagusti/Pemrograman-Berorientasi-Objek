@@ -2,9 +2,9 @@ package jobsheet3;
 
 public class Motor 
 {
-    public String platMotor;
-    public boolean isMesinOn;
-    public int kecepatan;
+    private String platMotor;
+    private boolean isMesinOn;
+    private int kecepatan;
     
     public void displayStatus() 
     {
@@ -17,5 +17,29 @@ public class Motor
 
         System.out.println("Kecepatan: " + this.kecepatan);
         System.out.println("======================");
+    }
+
+    public void setPlatMotor(String platMotor) {
+        this.platMotor = platMotor;
+    }
+
+    public boolean isIsMesinOn() {
+        return isMesinOn;
+    }
+
+    public void setIsMesinOn(boolean isMesinOn) {
+        this.isMesinOn = isMesinOn;
+    }
+
+    public int getKecepatan() {
+        return kecepatan;
+    }
+
+    public void setKecepatan(int kecepatan) 
+    {
+        if (!this.isMesinOn && kecepatan > 0)
+            System.out.println("Kecepatan tidak boleh lebih dari 0 jika mesin off");
+        else
+            this.kecepatan = kecepatan;
     }
 }
