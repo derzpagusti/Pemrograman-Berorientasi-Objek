@@ -37,6 +37,8 @@ public class Member
     {
         if (installment > loanAmount)
             System.out.println("Maaf, jumlah cilcilan melebihi total peminjaman saat ini");
+        else if (installment < 0.1 * loanAmount)
+            System.out.println("Maaf, jumlah cilcilan harus minimal 10% dari total peminjaman");
         else
             loanAmount -= installment;
     }

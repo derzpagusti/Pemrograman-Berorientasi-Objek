@@ -20,6 +20,10 @@ public class TestCooperative
         System.out.println("\nPaying 1,000,000 installments"); 
         mbr1.installment(1000000); 
         System.out.println("Current loan amount: " + mbr1.getLoanAmount());  
+
+        System.out.println("\nPaying 200,000 installments"); 
+        mbr1.installment(200000); 
+        System.out.println("Current loan amount: " + mbr1.getLoanAmount()); 
         
         System.out.println("\nPaying 3,000,000 installments"); 
         mbr1.installment(3000000); 
