@@ -11,6 +11,6 @@ public class InheritanceDemo
         dsn1.gaji   = 3000000;
         dsn1.nidn   = "1989432439";
 
-        System.out.println(dsn1.getInfo());
+        System.out.println(dsn1.getAllInfo());
     }
 }
