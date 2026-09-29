@@ -6,8 +6,14 @@ public class Pegawai
                     nama;
     public  float   gaji;
 
-    public Pegawai()
-        { System. out.println("Objek dari class Pegawai dibuat"); }
+    // public Pegawai()
+    //     { System. out.println("Objek dari class Pegawai dibuat"); }
+    public Pegawai(String nip, String nama, float gaji) 
+    {
+        this.nip = nip;
+        this.nama = nama;
+        this.gaji = gaji;
+    }
 
     public String getInfo()
     {
