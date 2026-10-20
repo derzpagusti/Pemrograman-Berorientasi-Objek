@@ -1,6 +1,6 @@
 package jobsheet8;
 
-public class Hewan 
+public abstract class Hewan 
 {
     public  double  berat;
     public  String  makanan,
@@ -13,15 +13,8 @@ public class Hewan
         this.habitat    = habitat;
     }
                     
-    public void bergerak()
-    {
-        
-    }
-
-    public void bernapas()
-    {
-
-    }
+    public abstract void bergerak();
+    public abstract void bernapas();
 
     public void cetakInfo()
     {
