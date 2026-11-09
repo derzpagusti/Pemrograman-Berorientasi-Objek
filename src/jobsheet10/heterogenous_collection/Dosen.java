@@ -1,0 +1,27 @@
+package jobsheet10.heterogenous_collection;
+
+public class Dosen extends Pegawai
+{
+    public String nidn;
+
+    public Dosen() {}
+
+    public Dosen(String nidn, String nip, String nama) {
+        super(nip, nama);
+        this.nidn = nidn;
+    }
+
+    @Override
+    public void displayInfo() {
+        super.displayInfo();
+        System.out.println("NIDN    : " + nidn);
+    }
+
+    public void mengajar() 
+    {
+        System.out.println("Membuat rencana pembelajaran");
+        System.out.println("Menyusun materi");
+        System.out.println("Melaksanakan PBM");
+        System.out.println("Melakukan evaluasi");
+    }
+}
